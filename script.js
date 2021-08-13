@@ -105,7 +105,7 @@ function translateration(){
     // console.log(tr);
     let output = '<p>';
     // console.log(value);
-    if(tr <= min || tr >= max){
+    if(tr < min || tr > max){
         for(let i in value){
             output += LatinToTifinagh[value[i]] ?? value[i];
         }
