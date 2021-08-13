@@ -79,8 +79,8 @@ const LatinToTifinagh = {
 // const dictionary = ['ⴰ','ⴱ','ⴳ','ⴷ','ⴻ','ⴼ','ⴽ','ⵀ','ⵄ','ⵎ','ⵜ','ⵞ','ⵟ','ⵙ','ⵣ','ⵕ','ⴹ','ⵏ','ⵍ','ⵔ','ⵚ','ⵛ','ⵊ','ⵅ','ⵃ','ⵡ','ⵖ','ⵯ','ⵥ','ⵇ','ⵢ','ⵉ','ⵓ','ⵒ'];
 // const latin = ['a','b','ɡ','d','e','f','k','h','ɛ','m','t','č','ṭ','s','z','ṛ','ḍ','n','l','r',	'ṣ','c','j','x','ḥ','w','ɣ','ʷ','ẓ','q','y','i','u','p'];
 
-// const min = 11568; // ascii code of the letter 'ⴰ'
-// const max = 11631; // ascii code of the letter 'ⵥ'
+const min = 11568; // ascii code of the letter 'ⴰ'
+const max = 11631; // ascii code of the letter 'ⵥ'
 
 let inputText = document.getElementById('inputText');
 let outputText = document.getElementById('outputText');
@@ -105,7 +105,7 @@ function translateration(){
     // console.log(tr);
     let output = '<p>';
     // console.log(value);
-    if(tr > 97 && tr < 122){
+    if(tr <= min || tr >= max){
         for(let i in value){
             output += LatinToTifinagh[value[i]] ?? value[i];
         }
