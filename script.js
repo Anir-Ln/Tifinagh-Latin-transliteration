@@ -1,7 +1,7 @@
 const tifinaghToLatin = {
     'ⴰ': 'a',
 	'ⴱ': 'b',
-    'ⴳ': 'ɡ',
+    'ⴳ': 'g',
     'ⴷ': 'd',
     'ⴻ': 'e',
 	'ⴼ': 'f',
@@ -40,7 +40,7 @@ const tifinaghToLatin = {
 const LatinToTifinagh = {
     'a': 'ⴰ',
 	'b': 'ⴱ',
-    'ɡ': 'ⴳ',
+    'g': 'ⴳ',
     'd': 'ⴷ',
     'e': 'ⴻ',
 	'f': 'ⴼ',
